@@ -20,3 +20,14 @@ $gray: #7b7b7b;
 	font-family: "Rubik-Regular", sans-serif;
 	font-weight: 400;
 }
+%title {
+	@extend %DMS-700;
+	font-size: 36px;
+	color: $title;
+}
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+@function min($numbers...) {
+	@return m#{i}n(#{$numbers});
+}
