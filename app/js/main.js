@@ -10,14 +10,14 @@ $(function () {
 	});
 
 
-	$('.product__btn').on('click', function () {
-		$('.product-filter__item').addClass('.product-filter__item--list')
-	});
+	// $('.product__btn').on('click', function () {
+	// 	$('.product-filter__item').addClass('.product-filter__item--list')
+	// });
 
 
-	$('.product__btn').on('click', function () {
-		$('.product-filter__item').removeClass('.product-filter__item--list')
-	});
+	// $('.product__btn').on('click', function () {
+	// 	$('.product-filter__item').removeClass('.product-filter__item--list')
+	// });
 
 
 
@@ -55,6 +55,8 @@ $(function () {
 		ratedFill: "#ffcc00",
 		// readOnly: true,
 	});
+
+
 
 
 
