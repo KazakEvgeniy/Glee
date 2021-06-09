@@ -18,3 +18,76 @@ body {
 	max-width: 1170px;
 	margin: 0 auto;
 }
+.breadcrumbs {
+	padding: 34px 0;
+	text-align: center;
+	background-color: #edf1f4;
+	&__title {
+		margin-bottom: 20px;
+		font-size: 34px;
+		line-height: 36px;
+		@extend %Rubik-500;
+	}
+
+	&__list {
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+		font-size: 14px;
+		line-height: 24px;
+		color: #83898f;
+		padding-right: 40px;
+		position: relative;
+		&::after {
+			position: absolute;
+			content: "/";
+			font-size: 14px;
+			right: 20px;
+		}
+		&:last-child {
+			padding-right: 0px;
+			&::after {
+				display: none;
+			}
+		}
+	}
+	&__link {
+		color: inherit;
+	}
+}
+.pagination {
+	display: flex;
+	justify-content: center;
+	padding: 10px 0 125px;
+	&__list {
+		display: flex;
+	}
+	&__next {
+		color: #243f4d;
+	}
+	&__link.pagination__link--active {
+		background-color: $accent;
+		color: #fff;
+	}
+	&__item {
+		margin-right: 15px;
+		font-size: 16px;
+		@extend %Rubik-400;
+	}
+	&__link {
+		padding: 20px;
+		align-items: center;
+		border: 1px solid $accent;
+		font-size: 16px;
+		color: #243f4d;
+
+		@extend %Rubik-400;
+	}
+	&__arrow {
+		text-transform: uppercase;
+		padding: 20px;
+		border: 1px solid $accent;
+		color: #243f4d;
+	}
+}
