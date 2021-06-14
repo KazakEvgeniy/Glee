@@ -709,6 +709,7 @@
 		box-shadow: 0px 6px 47px 3px rgba(37, 37, 37, 0.05);
 	}
 	&__img {
+		margin-bottom: 30px;
 		position: relative;
 	}
 	&__btn {
@@ -939,6 +940,245 @@
 }
 .jq-ry-container {
 	padding: 0;
+}
+.about {
+	padding: 120px 0;
+	&__wrapper {
+		display: flex;
+	}
+	&__img {
+		width: 570px;
+		height: 670px;
+		object-fit: cover;
+		margin-right: 50px;
+	}
+	&__content {
+		padding: 80px 0;
+	}
+	&__experience {
+		display: flex;
+		margin-bottom: 52px;
+	}
+	&__img-numb {
+		margin-right: 30px;
+	}
+	&__experience-text {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding-top: 22px;
+		font-size: 16px;
+		@extend %DMS-400;
+		line-height: 28px;
+		color: $subtitle;
+	}
+	&__title {
+		@extend %DMS-700;
+		line-height: 32px;
+		font-size: 36px;
+		color: $subtitle;
+	}
+	&__title-text {
+		@extend %DMS-400;
+		font-size: 16px;
+		line-height: 30px;
+		color: $subtitle;
+		padding: 50px 0;
+		margin-bottom: 30px;
+		border-bottom: 2px solid #e6eaf0;
+		width: 550px;
+	}
+	&__skills {
+		width: 550px;
+		display: flex;
+	}
+	&__skills-item {
+		@extend %DMS-700;
+		position: relative;
+		margin-bottom: 12px;
+		padding: 10px 14px 10px 90px;
+		&:nth-last-child(2) {
+			border-right: 1px solid #e6eaf0;
+			border-left: 1px solid #e6eaf0;
+		}
+	}
+	&__level {
+		font-size: 36px;
+		line-height: 38px;
+		color: $subtitle;
+		margin-bottom: 10px;
+	}
+	&__level-text {
+		font-size: 16px;
+		line-height: 17px;
+		color: #4c4c4c;
+	}
+	&__level--projects::before {
+		content: "";
+		background-image: url("../images/about/icons/1.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		left: 20px;
+		top: 22px;
+		height: 40px;
+		width: 40px;
+	}
+	&__level--revenue::before {
+		content: "";
+		background-image: url("../images/about/icons/2.svg");
+		position: absolute;
+		background-repeat: no-repeat;
+		left: 20px;
+		top: 20px;
+		height: 40px;
+		width: 45px;
+	}
+	&__level--awards::before {
+		content: "";
+		background-image: url("../images/about/icons/3.svg");
+		position: absolute;
+		background-repeat: no-repeat;
+		left: 20px;
+		top: 22px;
+		height: 40px;
+		width: 40px;
+	}
+}
+.our-rating {
+	height: 320px;
+	background-color: #fcd7b6;
+
+	&__inner {
+		padding: 85px 0;
+		display: flex;
+		justify-content: space-around;
+	}
+	&__item {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		@extend %DMS-700;
+		color: $subtitle;
+	}
+	&__icon {
+		margin-bottom: 22px;
+		display: block;
+	}
+	&__numb {
+		margin-bottom: 25px;
+		font-size: 36px;
+		line-height: 32px;
+	}
+}
+.team {
+	padding: 120px 0;
+	&__wrapper {
+		display: flex;
+	}
+	&__content {
+		width: 430px;
+		margin-right: 95px;
+	}
+	&__title {
+		@extend %DMS-700;
+		font-size: 36px;
+		line-height: 32px;
+		color: $subtitle;
+		margin-bottom: 38px;
+	}
+	&__text {
+		@extend %Rubik-400;
+		font-size: 16px;
+		line-height: 30px;
+		margin-bottom: 45px;
+	}
+	&__btn {
+		position: relative;
+		display: inline-block;
+	}
+	&__link-btn {
+		border-radius: 5px;
+		&::after {
+			content: "";
+			position: absolute;
+			background-image: url("../images/icons/about-arrow.svg");
+			width: 16px;
+			height: 12px;
+			top: 50%;
+			right: 26px;
+			transform: translateY(-50%);
+		}
+		display: inline-block;
+		padding: 20px 60px 20px 18px;
+		background-color: $accent;
+		color: #fff;
+		font-size: 15px;
+	}
+	&__pfoto-wrap {
+		display: grid;
+		grid-template-columns: repeat(2, 370px);
+		grid-column-gap: 30px;
+		grid-row-gap: 100px;
+	}
+	&__img {
+		width: 370px;
+		height: 320px;
+		object-fit: cover;
+	}
+	&__box {
+		background-color: #fff;
+		padding: 30px 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 320px;
+		height: 110px;
+		position: absolute;
+		margin-top: -50px;
+		box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+	}
+
+	&__name {
+		font-size: 22px;
+		line-height: 26px;
+		color: #436372;
+		@extend %DMS-700;
+		margin-bottom: 20px;
+	}
+
+	&__link {
+		width: 40px;
+		height: 40px;
+		background-color: #f6f6f6;
+		border-radius: 50%;
+		position: relative;
+		&:first-child {
+			margin-right: 8px;
+		}
+	}
+	&__social {
+		display: flex;
+	}
+	&__link-instagram {
+		position: absolute;
+		top: 50%;
+		left: 12px;
+		margin-right: 8px;
+		transform: translateY(-50%);
+	}
+	&__link-google {
+		position: absolute;
+		top: 50%;
+		left: 11px;
+		transform: translateY(-50%);
+	}
+	&__profession {
+		font-size: 16px;
+		line-height: 30px;
+		@extend %Rubik-400;
+		color: #565872;
+	}
 }
 
 @import "media";

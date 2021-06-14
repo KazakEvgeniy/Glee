@@ -10,14 +10,28 @@ $(function () {
 	});
 
 
-	// $('.product__btn').on('click', function () {
-	// 	$('.product-filter__item').addClass('.product-filter__item--list')
+	// $('.product-list__user').on('click', function () {
+	// 	$('.product-list__user').addClass('product-list__wallet--active');
 	// });
 
 
-	// $('.product__btn').on('click', function () {
-	// 	$('.product-filter__item').removeClass('.product-filter__item--list')
+	// $('.product__btn-list').on('click', function () {
+	// 	$('.product-list__user').removeClass('product-list__wallet--active');
 	// });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
