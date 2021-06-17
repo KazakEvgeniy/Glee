@@ -1658,6 +1658,103 @@
 		line-height: 21px;
 		@extend %Rubik-400;
 	}
+	&__map {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+.contact {
+	padding: 120px 0 135px;
+	&__link {
+		display: block;
+		text-align: center;
+		font-size: 16px;
+		line-height: 20px;
+		color: $accent;
+		margin-bottom: 20px;
+		@extend %DMS-700;
+	}
+	&__title {
+		text-align: center;
+		font-size: 35px;
+		line-height: 37px;
+		@extend %DMS-700;
+		color: #436372;
+	}
+	&__items {
+		padding: 80px 0 120px;
+		display: flex;
+		justify-content: space-between;
+	}
+	&__form {
+		width: 100%;
+		margin-right: 30px;
+		input {
+			width: 300px;
+			height: 50px;
+		}
+		textarea {
+			height: 180px;
+			margin-bottom: 12px;
+		}
+	}
+	&__input {
+		width: 100px;
+	}
+	button {
+		font-size: 15px;
+	}
+}
+.contact-adress,
+.contact-email,
+.contact-phone {
+	text-align: center;
+
+	background-color: #fbfbfb;
+	border: 2px solid transparent;
+	transition: all 0.5s;
+	&:hover {
+		path {
+			fill: #fff;
+		}
+		border: 2px solid $accent;
+		.contact-adress__link,
+		.contact-email__link,
+		.contact-phone__link {
+			transition: all 0.5s;
+			background-color: $accent;
+		}
+	}
+	width: 370px;
+	height: 380px;
+	padding: 70px 50px 80px;
+	&__link {
+		margin: 0 auto;
+		display: block;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 82px;
+		height: 82px;
+		box-shadow: 0px 6px 57px 0px rgba(37, 37, 37, 0.05);
+		background-color: #fff;
+		border-radius: 25px;
+		margin-bottom: 65px;
+	}
+	&__adress {
+		font-size: 20px;
+		line-height: 26px;
+		@extend %DMS-700;
+		color: #222222;
+		margin-bottom: 25px;
+	}
+	&__street,
+	&__coordinat {
+		@extend %Rubik-400;
+		font-size: 16px;
+		line-height: 30px;
+		color: #565872;
+	}
 }
 
 @import "media";
