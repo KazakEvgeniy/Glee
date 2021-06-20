@@ -1996,9 +1996,46 @@
 		margin-left: 12px;
 	}
 }
-.slick-prev {
-}
 .slick-next {
 	right: 60px;
 }
+.condition {
+	padding: 120px 0;
+	&__list {
+		list-style-type: decimal-leading-zero;
+	}
+
+	&__title {
+		font-size: 24px;
+		line-height: 40px;
+		@extend %Rubik-500;
+		color: $subtitle;
+		margin-bottom: 35px;
+	}
+	&__text {
+		font-size: 16px;
+		line-height: 30px;
+		color: $subtitle;
+		@extend %Rubik-400;
+		margin-bottom: 35px;
+	}
+	&__text:last-child {
+		margin-bottom: 0px;
+	}
+	&__list-box {
+		padding-bottom: 80px;
+		margin-left: 30px;
+	}
+
+	&__item + .condition__item {
+		margin-top: 35px;
+	}
+	&__item {
+		font-size: 16px;
+		line-height: 30px;
+		color: $subtitle;
+		@extend %Rubik-400;
+	}
+}
+
 @import "media";
