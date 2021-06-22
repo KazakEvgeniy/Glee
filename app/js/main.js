@@ -1,5 +1,19 @@
 $(function () {
 
+	$('.footer-top__item--one ').on('click', function () {
+		$('.footer-top__list--one').slideToggle();
+	});
+	$('.footer-top__item--too ').on('click', function () {
+		$('.footer-top__list--too').slideToggle();
+	});
+
+
+
+
+	$('.header__button').on('click', function () {
+		$('.menu__list').toggleClass('menu__list--active');
+	});
+
 
 
 
