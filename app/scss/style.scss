@@ -396,13 +396,16 @@
 		padding: 5px;
 		outline: none;
 	}
+
 	&__btn-list.product__btn-list--active {
 		path {
 			fill: #21688f;
 		}
 	}
 }
-
+.product__btn-list {
+	display: none;
+}
 .product-logo {
 	max-width: 1170px;
 	margin: 0 auto;

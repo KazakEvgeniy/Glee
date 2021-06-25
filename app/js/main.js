@@ -24,6 +24,7 @@ $(function () {
 		slidesToScroll: 1,
 		vertical: true,
 		draggable: false
+
 	})
 
 	$('.product-details__big-item').slick({
@@ -41,11 +42,34 @@ $(function () {
 		slidesToScroll: 1,
 		prevArrow: '<button type="button" class="slick-prev">	<img src="images/icons/arrow-right1.svg" alt=""></button>',
 		nextArrow: '<button type="button" class="slick-next">	<img src="images/icons/arrow-left1.svg" alt=""></button>',
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
 
+				}
+			},
+			{
+				breakpoint: 860,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 620,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false
+				}
+			}
 
-		// autoplay: true,
-		// autoplaySpeed: 1000
-	})
+		]
+
+	});
 
 
 
@@ -58,9 +82,9 @@ $(function () {
 	});
 
 
-	// $('.product-list__user').on('click', function () {
-	// 	$('.product-list__user').addClass('product-list__wallet--active');
-	// });
+	$('.product__btn-list').on('click', function () {
+		$('.filter').toggleClass('filter--active');
+	});
 
 
 	// $('.product__btn-list').on('click', function () {

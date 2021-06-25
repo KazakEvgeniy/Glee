@@ -11,7 +11,7 @@
 
 <body>
 	<header class="header">
-		<div class="container">
+		<div class="container-inner">
 			<div class="header__inner">
 				<div class="logo">
 					<a class="logo__link" href="#">
@@ -41,6 +41,9 @@
 						</li>
 					</ul>
 				</nav>
+				<button class="header__button">
+					<span></span>
+				</button>
 				<div class="user-nav">
 					<a class="user-nav__search" href="#">
 						<img class="user-nav__search-img" src="images/icons/search-header.svg" alt="search">
@@ -62,6 +65,7 @@
 				</div>
 			</div>
 		</div>
+
 	</header>
 
 	<main class="main">
@@ -140,6 +144,7 @@
 
 						</a>
 
+
 						<div class="contact-email__adress">
 							Our Email
 						</div>
@@ -171,12 +176,13 @@
 						<div class="contact-phone__adress">
 							Our Phone
 						</div>
-						<div class="contact-phone__street">
-							Office Telephone : 0029129102320
-						</div>
-						<p class="contact-phone__coordinat">
-							Mobile : 000 2324 39493
-						</p>
+
+						<a class="contact-phone__street" href="tel:0029129102320">Office Telephone : 0029129102320</a>
+
+						<a class="contact-phone__coordinat" href="tel:000232439493"> Mobile : 000 2324 39493</a>
+
+
+
 					</div>
 				</div>
 
@@ -381,7 +387,7 @@
 		<div class="container-inner">
 			<div class="footer-top">
 				<div class="footer-top__items">
-					<div class="footer-top__item-connect">
+					<div class="footer-top__item-connect ">
 						<div class="logo logo__footer">
 							<a class="logo__link" href="#">
 								<img class="logo__img" src="images/icons/logo.svg" alt="logo">
@@ -395,11 +401,11 @@
 						</a>
 						<a class="footer-top__email" href="mailto:contact@Glee.com">Email: contact@Glee.com</a>
 					</div>
-					<div class="footer-top__item">
+					<div class="footer-top__item footer-top__item--one ">
 						<div class="footer-top__title">
 							Services
 						</div>
-						<ul class="footer-top__list">
+						<ul class="footer-top__list footer-top__list--one">
 							<li class="footer-top__services">
 								<a class="footer-top__link" href="#">About us</a>
 							</li>
@@ -417,11 +423,11 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer-top__item">
+					<div class="footer-top__item footer-top__item--too">
 						<div class="footer-top__title">
 							Account
 						</div>
-						<ul class="footer-top__list">
+						<ul class="footer-top__list footer-top__list--too">
 							<li class="footer-top__services">
 								<a class="footer-top__link" href="#">Your Account</a>
 							</li>
@@ -436,7 +442,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="footer-top__item">
+					<div class="footer-top__item footer-top__item--form">
 						<div class="footer-top__title">
 							newsletter
 						</div>
